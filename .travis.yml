@@ -1,10 +1,10 @@
 language: cpp
 os: linux
-dist: trusty
+dist: bionic
 addons:
   apt:
     packages:
-    - cmake3
+    - cmake
 before_script:
 - export PATH="$HOME/bin:$PATH"
 - make -f texinfo-travis.mk install_texinfo
