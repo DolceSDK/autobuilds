@@ -5,9 +5,7 @@ addons:
   apt:
     packages:
     - cmake
-before_script:
-- export PATH="$HOME/bin:$PATH"
-- make -f texinfo-travis.mk install_texinfo
+    - texinfo
 script:
 - export REV=dirty-$(git describe --always)
 - git clone https://github.com/vitasdk/buildscripts.git
