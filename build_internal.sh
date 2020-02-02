@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 cd buildscripts
 case "${TOXENV}" in
     WIN)

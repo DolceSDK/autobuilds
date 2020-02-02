@@ -8,8 +8,7 @@ addons:
     - texinfo
 script:
 - git clone https://github.com/DolceSDK/buildscripts.git
-- chmod +x *.sh
-- "./build.sh"
+- "bash ./build.sh"
 deploy:
   provider: releases
   token:
