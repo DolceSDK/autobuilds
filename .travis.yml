@@ -1,19 +1,9 @@
 language: cpp
-matrix:
-  include:
-  - os: linux
-    dist: trusty
-    env: TOXENV=WIN
-    sudo: false
-  - os: linux
-    dist: trusty
-    sudo: false
-  - os: osx
-    osx_image: xcode8.3
+os: linux
+dist: trusty
 addons:
   apt:
     packages:
-    - g++-mingw-w64
     - cmake3
 before_script:
 - export PATH="$HOME/bin:$PATH"
