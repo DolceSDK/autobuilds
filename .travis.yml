@@ -7,7 +7,7 @@ addons:
     - cmake
     - texinfo
 script:
-- git clone https://github.com/vitasdk/buildscripts.git
+- git clone https://github.com/DolceSDK/buildscripts.git
 - chmod +x *.sh
 - "./build.sh"
 deploy:
