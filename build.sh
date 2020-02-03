@@ -24,6 +24,7 @@ trap 'error_handler' ERR
 
 # Set up a repeating loop to send some output to Travis.
 
+echo "Machine has $(nproc) processors"
 bash -c "while true; do echo \$(date) - building ...; sleep $PING_SLEEP; done" &
 PING_LOOP_PID=$!
 
