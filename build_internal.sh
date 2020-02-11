@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 cd buildscripts
-case "${TOXENV}" in
+case "${SDK_TARGET}" in
     WIN)
 unset CXX
 unset CC

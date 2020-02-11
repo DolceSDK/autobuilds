@@ -1,11 +1,19 @@
 language: cpp
-os: linux
 dist: bionic
+osx_image: xcode11.3
+jobs:
+  include:
+  - os: linux
+  - os: linux
+    dist: bionic
+    env: SDK_TARGET=WIN
+  - os: osx
 addons:
   apt:
     packages:
     - cmake
     - texinfo
+    - g++-mingw-w64
 script:
 - git clone https://github.com/DolceSDK/buildscripts.git
 - "bash ./build.sh"
